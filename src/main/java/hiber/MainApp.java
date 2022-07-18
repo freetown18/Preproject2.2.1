@@ -46,7 +46,7 @@ public class MainApp {
             System.out.println();
         }
 
-        userService.getUserByCar("Car4", 3);
+        userService.getUserByCar("Car2", 90);
         context.close();
     }
 }

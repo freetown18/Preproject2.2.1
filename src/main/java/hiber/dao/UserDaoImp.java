@@ -37,13 +37,12 @@ public class UserDaoImp implements UserDao {
                                 .setParameter("series", series)
                                         .getSingleResult();
 
-        System.out.println("*****");
-        System.out.println("User with car model " + model + " and series " + series + " is: ");
-        System.out.println("Id = "+u.getId());
-        System.out.println("First Name = "+u.getFirstName());
-        System.out.println("Last Name = "+u.getLastName());
-        System.out.println("Email = "+u.getEmail());
-        System.out.println("*****");
+        System.out.println("*****" +
+                            "\nUser with car model " + model + " and series " + series + " is: " +
+                            "\nId = "+u.getId() +
+                            "\nFirst Name = "+u.getFirstName() +
+                            "\nLast Name = "+u.getLastName() +
+                            "\nEmail = "+u.getEmail());
 
         return u;
     }
