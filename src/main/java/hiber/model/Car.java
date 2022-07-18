@@ -18,6 +18,14 @@ public class Car {
         return id;
     }
 
+    public String getModel() {
+        return model;
+    }
+
+    public int getSeries() {
+        return series;
+    }
+
     public Car(String model, int series) {
         this.model = model;
         this.series = series;
